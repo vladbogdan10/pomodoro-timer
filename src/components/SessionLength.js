@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 
 class SessionLength extends Component {
   state = {
-    count: null
+    count: 25
   }
 
   render () {
-    const style = {
-      display: 'inline-block'
-    }
-
     return (
-      <div style={style}>Session Length</div>
+      <div>
+        <h2>Session Length</h2>
+        <h3>{this.state.count}</h3>
+      </div>
     );
   }
 }

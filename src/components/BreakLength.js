@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
+import '../index.css';
 
 class BreakLength extends Component {
   state = {
-    count: null
+    count: 5
   }
 
   render () {
-    const style = {
-      display: 'inline-block'
-    }
-
     return (
-      <div style={style}>Break Length</div>
+      <div className="BreakLength">
+        <h2>Break Length</h2>
+        <h3>{this.state.count}</h3>
+      </div>
     );
   }
 }
