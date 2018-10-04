@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BreakLength from './components/BreakLength';
 import SessionLength from './components/SessionLength';
+import './index.css';
 
 class App extends Component {
   render() {
@@ -12,8 +13,10 @@ class App extends Component {
     return (
       <div>
         <h1 style={style}>Pomodoro Timer</h1>
-        <BreakLength />
-        <SessionLength />
+        <div className="TimersContainer">
+          <BreakLength />
+          <SessionLength />
+        </div>
       </div>
     );
   }
